@@ -1,0 +1,9 @@
+
+body {
+  background-image: url('https://media.giphy.com/media/wxZVenBE9msRq/giphy.gif');
+}
+
+.img {
+  max-height: 200px;
+  border-radius: 100px;
+}
