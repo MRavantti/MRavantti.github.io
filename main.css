@@ -1,9 +1,14 @@
 
 body {
-  background-image: url('https://media.giphy.com/media/wxZVenBE9msRq/giphy.gif');
+  background-color:rgba(238, 238, 238, 1);
 }
 
 .img {
   max-height: 200px;
-  border-radius: 100px;
+  border-radius: 50px;
+}
+
+.gif {
+  max-width: 200px;
+  border-radius: 50px;
 }
