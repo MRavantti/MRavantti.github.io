@@ -1,14 +1,21 @@
 
 body {
   background-color:rgba(238, 238, 238, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .img {
   max-height: 200px;
-  border-radius: 50px;
+  border-radius: 100px;
 }
 
 .gif {
-  max-width: 200px;
-  border-radius: 50px;
+  max-width: 300px;
+}
+
+.uniGif {
+  max-width: 300px;
 }
