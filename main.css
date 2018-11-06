@@ -1,21 +1,157 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote::before, blockquote:after,
+q:before, q::after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+==============================================
+Costum styles
+==============================================
+*/
+
 
 body {
-  background-color:rgba(238, 238, 238, 1);
+  font-size: 16px;
+  letter-spacing: .5px;
+  font-family: 'Roboto';
+}
+
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+}
+
+/*
+==============================================
+Navigation bar
+==============================================
+*/
+
+.mainNav {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
+  height: 100px;
+  padding: 5px 8px 15px;
 }
 
-.img {
-  max-height: 200px;
-  border-radius: 100px;
+.mainNav a {
+  font-size: 20px;
 }
 
-.gif {
-  max-width: 300px;
+.button {
+  padding-top: 20px;
 }
 
-.uniGif {
-  max-width: 300px;
+.about {
+  flex-grow: 2;
 }
+
+.logo {
+  flex-grow: 1;
+}
+
+.email {
+  flex-grow: .1;
+}
+
+.catalogue {
+  flex-grow: .1;
+}
+
+.logoImg {
+  width: 130px;
+  margin-top: 24px;
+}
+
+@media screen and (max-width: 800px) {
+  .button {display: relative;}
+}
+
+/*
+==============================================
+Burger menu icon
+==============================================
+*/
+
+.burgerContainer {
+    display: inline-block;
+    cursor: pointer;
+    float: right;
+    margin: 10px;
+}
+
+.barOne, .barTwo, .barThree {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.6s;
+    border-radius: 10px;
+}
+
+.transform .barOne {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.transform .barTwo {opacity: 0;}
+
+.transform .barThree {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+@media screen and (min-width: 800px) {
+  .burgerContainer {display: none;}
+}
+
+/*
+==============================================
+Burger menu icon
+==============================================
+*/
